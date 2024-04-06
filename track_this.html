@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track This</title>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS NATIVO -->
+    <link rel="stylesheet" href="css/track_this.css">
+    <!-- JS NATIVO -->
+    <script src="js/index.js" defer></script>
+    <!-- FONT AWESOME JS -->
+    <script src="https://kit.fontawesome.com/9291085edc.js" crossorigin="anonymous" defer></script>
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha256-u7O49P5bSfFqfGnjsbLoNBMBNlHT6Z4+/U02d/yo3+g= crossorigin='anonymous'" />
+    <!-- ICONO -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/track_this.png" style="border-radius: 10px;">
+
+
+</head>
+<body class="container mt-5">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark fixed-top mb-5 color-navbar">
+    <div class="container-fluid mb-2">
+      <button class="navbar-toggler color-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Track This! <img src="img/track_this.png" alt="Logo" class="track_this_logo2"></h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" data-bs-dismiss="offcanvas" aria-label="Close" href="#"><h5>Home</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/login.html"><h5>Login</h5></a>
+            </li>
+          <form class="d-flex mt-3" role="search">
+            <a class="btn btn-success" type="submit" style="text-decoration: none;" href="html/signup.html">Aún no tienes cuenta?</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- FIN NAVBAR -->
+  <br>
+    
+    <h1 class="text-center mb-4 mt-5">
+        TRACK THIS! <img src="img/track_this.png" alt="Logo" class="track_this_logo">
+    </h1>
+    
+    <form id="search-form" class="form-inline justify-content-center mt-5 mb-5">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="search-button" placeholder="Escribe aquí..." aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2" onclick="showSearchResults()"><i class="fas fa-search"></i>ㅤBuscar</button>
+        </div>
+    </form>
+
+    <!-- Resultados de búsqueda -->
+    <div id="search-results" class="mt-4"></div>
+
+
+    <!-- RESULTADOS PRODUCTOS -->
+    <div id="searchResults" style="display: none;">
+        <div class="contenedor mb-5">
+            <div class="imagen">
+                <img src="img/lavadora.png" alt="lavadora" width="30px">
+            </div>
+            <div class="contenido">
+                <h2>Lavadora WFQY101429VJM</h2>
+                <p>Precio: <b>558€</b></p>
+                <button id="boton-accion">Ver en Amazon</button>
+            </div>
+        </div>
+        
+        <div class="contenedor mb-5">
+            <div class="imagen">
+            <img src="img/lavadora.png" alt="lavadora" width="30px">
+            </div>
+            <div class="contenido">
+            <h2>Lavadora WFQY101429VJM</h2>
+            <p>Precio: <b>319€</b></p>
+            <button>Ver en Amazon</button>
+            </div>
+        </div>
+        <div class="contenedor mb-5">
+            <div class="imagen">
+            <img src="img/lavadora.png" alt="lavadora" width="30px">
+            </div>
+            <div class="contenido">
+            <h2>Lavadora WFQY101429VJM</h2>
+            <p>Precio: <b>473€</b></p>
+            <button>Ver en Amazon</button>
+            </div>
+        </div>
+        <div class="contenedor mb-5">
+            <div class="imagen">
+            <img src="img/lavadora.png" alt="lavadora" width="30px">
+            </div>
+            <div class="contenido">
+            <h2>Lavadora WFQY101429VJM</h2>
+            <p>Precio: <b>675€</b></p>
+            <button>Ver en Amazon</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FIN RESULTADOS PRODUCTOS -->
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
