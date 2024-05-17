@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lexend Exa', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin: 50px auto;
+    margin-top: 10%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.form {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: none;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: teal;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #007b6b;
+}
+
+.sign-up-label {
+    text-align: center;
+    font-size: 14px;
+    color: #747474;
+    margin-top: 20px;
+}
+
+.sign-up-link {
+    text-decoration: underline;
+    color: teal;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-up-link:hover {
+    color: #007b6b;
+}
