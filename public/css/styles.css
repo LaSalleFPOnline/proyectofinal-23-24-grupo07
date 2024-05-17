@@ -75,3 +75,7 @@ body {
 .sign-up-link:hover {
     color: #007b6b;
 }
+
+.form-control.input::placeholder {
+    color: black;
+}
