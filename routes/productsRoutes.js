@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const productController = require('../controllers/productController.js')
 const authController = require('../controllers/authController.js')
-const mailController = require('../controllers/mailController.js')
 
 //Crud:
 router.post('/create', productController.create)
@@ -19,10 +18,6 @@ router.get('/login', (req, res)=>{
 router.get('/register', (req, res)=>{
     res.render('register', {alert:false})
 })
-
-//mail
-router.post('/send-email', mailController.sendEmail)
-
 
 router.post('/login', authController.login)
 router.post('/register', authController.register)
